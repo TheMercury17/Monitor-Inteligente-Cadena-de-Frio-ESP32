@@ -1,0 +1,13 @@
+# Entornos y temporales
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# Carpetas de construcción interna (solo se entrega la carpeta 'Documentacion entregable')
+report/
+presentation/
+
+# Archivos de enunciado / extracción de texto
+ISI_Proyecto_Final_2026_3.pdf
+pdf_extracted_text.txt
