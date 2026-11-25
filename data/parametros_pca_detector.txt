@@ -1,4 +1,0 @@
-# Parámetros del Detector PCA para Firmware ESP32 (R19)
-PCA_MU = [3.608127, 3.577356, 3.583091]
-PCA_P1 = [-0.572233, -0.581550, -0.578230]
-PCA_UMBRAL_SPE = 0.043386

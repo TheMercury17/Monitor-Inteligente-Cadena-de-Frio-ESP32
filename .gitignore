@@ -4,10 +4,13 @@ __pycache__/
 .vscode/
 .idea/
 
-# Carpetas de construcción interna (solo se entrega la carpeta 'Documentacion entregable')
+# Carpetas de trabajo interno
 report/
 presentation/
+figures/
+data/
 
-# Archivos de enunciado / extracción de texto
+# Documentacion adicional interna (solo se entrega 'Documentación entregable')
+EXPLICACION_ARQUITECTURA_Y_CODIGOS.md
 ISI_Proyecto_Final_2026_3.pdf
 pdf_extracted_text.txt

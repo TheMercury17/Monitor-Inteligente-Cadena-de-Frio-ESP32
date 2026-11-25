@@ -1,6 +1,0 @@
-# Coeficientes de Calibración Polinomial Cúbica (Modelo 2)
-# x_norm = (ADC - 2048.0) / 1000.0
-# T = b0 + b1*x_norm + b2*x_norm^2 + b3*x_norm^3
-CANAL_0_BETA = [24.98290246, -21.99794654, 1.83812445, -2.06677953]
-CANAL_1_BETA = [24.95463619, -21.94391999, 1.79414050, -2.06955386]
-CANAL_2_BETA = [25.03352656, -22.07585047, 1.77527715, -2.02963655]

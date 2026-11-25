@@ -1,7 +1,0 @@
-evento_id,tipo,inicio_s,fin_s,canal_afectado,descripcion
-1,apertura_tapa,300,330,todos,Apertura 1 (30s)
-2,desconexion,550,600,ch1,Desconexión Sensor Canal 1 (50s)
-3,apertura_tapa,850,880,todos,Apertura 2 (30s)
-4,apertura_tapa,1250,1280,todos,Apertura 3 (30s)
-5,desconexion,1500,1540,ch2,Desconexión Sensor Canal 2 (40s)
-6,apertura_tapa,1800,1830,todos,Apertura 4 (30s)

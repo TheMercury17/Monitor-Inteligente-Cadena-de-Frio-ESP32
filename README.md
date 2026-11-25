@@ -17,25 +17,22 @@
 
 ### Estructura de Entregables del Repositorio
 
-- **`Documentacion entregable/`**: Carpeta oficial de documentación final para evaluación docente:
+- **`Documentación entregable/`**: Carpeta oficial que contiene única y exclusivamente la documentación formal para el docente:
   - `Informe_Tecnico_Proyecto_Final_Edemeridos.pdf`: Documento técnico formal de 6 páginas con desarrollo matemático riguroso, tipografía oficial (`Fontsona 5 Royal` y `Cambria Math`) y balance de cumplimiento normativo.
-  - `Presentacion_Final.pptx`: Presentación oficial de diapositivas en formato Pitch (12 minutos) con diseño visual de alta fidelidad, fórmulas en LaTeX y gráficas técnicas de alta resolución.
+  - `Presentacion_Final.pptx`: Presentación oficial de diapositivas en formato Pitch (12 minutos) con estructura de tarjetas superiores y gráficas anchas inferiores.
 - **`firmware/`**:
   - `firmware_esp32_monitor.ino`: Firmware autónomo en C/C++ para el microcontrolador ESP32 (calibración polinomial de 3er orden en aritmética de punto flotante de 32 bits, proyección PCA en línea y cálculo del estadístico SPE con accionamiento de alarma en GPIO 2).
 - **`src/`**: Códigos fuente modulares en Python que implementan los requisitos de ingeniería:
   - `01_circuito_acondicionamiento.py`: Acondicionamiento NTC, cálculo analítico de $R_f$ y cuantificación de resolución térmica.
   - `02_generador_datos_sinteticos.py`: Generador de datos sintéticos basados en leyes físicas para los experimentos E1, E2 y E3.
-  - `03_calibracion_regresion_matricial.py`: Álgebra matricial propia de MCO $\hat{eta} = (X^TX)^{-1}X^Ty$, intervalos de predicción y balance sesgo-varianza.
+  - `03_calibracion_regresion_matricial.py`: Álgebra matricial propia de MCO $\hat{\beta} = (X^TX)^{-1}X^Ty$, intervalos de predicción y balance sesgo-varianza.
   - `04_dinamica_termica_pso.py`: Modelado de transferencia de calor según la Ley de Newton, estimación de $k$ con PSO propio y memoria de cálculo de rediseño térmico (paneles VIP + eutéctico PCM).
-  - `05_monitoreo_anomalias_pca.py`: Descomposición espectral PCA/SVD propia, cálculo de $	heta_{SPE}$ y detección de fallas de sensor y aperturas de tapa.
+  - `05_monitoreo_anomalias_pca.py`: Descomposición espectral PCA/SVD propia, cálculo de $\theta_{SPE}$ y detección de fallas de sensor y aperturas de tapa.
   - `06_planeacion_rutas_aco_abc.py`: Algoritmo de Colonia de Hormigas (ACO) para VRP con límite de tiempo y sintonización mediante Colonia de Abejas Artificiales (ABC).
   - `07_validacion_cruzada_esp32_python.py`: Validación numérica cruzada de 60 muestras (ESP32 `float32` vs Python `float64`).
   - `08_dashboard_demostracion.py`: Consola interactiva en tiempo real para la sustentación y demostración en vivo.
-- **`data/`**: Datasets experimentales sintéticos (E1, E2, E3, coordenadas de clientes) y parámetros calibrados.
-- **`figures/`**: Gráficas técnicas generadas y presentadas en el informe y en las diapositivas.
-- **`ejecutar_todo.py`**: Orquestador integral que ejecuta secuencialmente los 8 módulos del proyecto y valida el cumplimiento.
-- **`sistema_completo_unificado.py`**: Implementación autocontenida de todo el sistema en un único archivo.
-- **`EXPLICACION_ARQUITECTURA_Y_CODIGOS.md`**: Memoria técnica explicativa que detalla la arquitectura de software, la razón de ser de los 8 módulos y su interacción con el firmware del ESP32.
+- **`ejecutar_todo.py`**: Orquestador integral que ejecuta secuencialmente los 8 módulos del proyecto.
+- **`sistema_completo_unificado.py`**: Implementación autocontenida de todo el sistema en un único archivo ejecutable.
 
 ---
 
